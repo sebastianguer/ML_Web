@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+    <title>Heart Disease Prediction</title>
+
+</head>
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>ML app</title>
+
+</head>
+
+<body>
+
+   <h1>Heart Disease Prediction</h1>
+
+</body>
+        <h2>Introduce your values</h2>
+
+        <form action="/" method="post">
+            Age: <input type="number" step="any" name="age"><br><br>
+            Ejection Fraction(%): <input type="number" step="any" name="ejection_fraction"><br><br>	
+            Serum Creatinine(mg/dL): <input type="number" step="any" name="serum_creatinine"><br><br>	
+            Serum Sodium(mEq/L): <input type="number" step="any" name="serum_sodium"><br><br>
+            <input type="submit" value="Predict">
+        </form>    
+    {% if prediction != None %}  
+        <h3>Prediction: {{ prediction }} </h3>  
+    {% endif %}        
+
+
+
+
+</html>
