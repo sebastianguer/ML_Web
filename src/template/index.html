@@ -20,17 +20,19 @@
 
 <body>
 
-   <h1>Heart Disease Prediction</h1>
+   <h1>Sturend Approval Prediction</h1>
 
 </body>
         <h2>Introduce your values</h2>
 
         <form action="/" method="post">
-            Age: <input type="number" step="any" name="age"><br><br>
-            Ejection Fraction(%): <input type="number" step="any" name="ejection_fraction"><br><br>	
-            Serum Creatinine(mg/dL): <input type="number" step="any" name="serum_creatinine"><br><br>	
-            Serum Sodium(mEq/L): <input type="number" step="any" name="serum_sodium"><br><br>
+            Attendance_Rate: <input type="number" step="any" name="AttendanceRate"><br><br>	
+            Study_Hours_Per_Week: <input type="number" step="any" name="StudyHoursPerWeek"><br><br>	
+            Previous_Grade: <input type="number" step="any" name="PreviousGrade"><br><br>
+            Extracurricular_Activities: <input type="number" step="any" name="ExtracurricularActivities"><br><br>
             <input type="submit" value="Predict">
+
+
         </form>    
     {% if prediction != None %}  
         <h3>Prediction: {{ prediction }} </h3>  
